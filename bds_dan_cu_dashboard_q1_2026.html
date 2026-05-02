@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:var(--font-sans,'Inter',sans-serif)}
+body{color:var(--color-text-primary);background:transparent;font-size:13px}
+.page{padding:0}
+h1{font-size:16px;font-weight:600;margin-bottom:4px}
+.sub{font-size:12px;color:var(--color-text-secondary);margin-bottom:16px}
+.kpi{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px}
+.kcard{background:var(--color-background-secondary);border-radius:8px;padding:12px 14px}
+.kl{font-size:10px;color:var(--color-text-secondary);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.kv{font-size:20px;font-weight:600}
+.ks{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.pos{color:#1D9E75}.neg{color:#E24B4A}.neu{color:var(--color-text-primary)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px}
+.panel{background:var(--color-background-secondary);border-radius:8px;padding:14px}
+.pt{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-secondary);margin-bottom:10px}
+.chart-wrap{position:relative}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;padding:5px 7px;color:var(--color-text-secondary);font-weight:500;border-bottom:1px solid var(--color-border-tertiary);font-size:10px;white-space:nowrap}
+td{padding:5px 7px;border-bottom:.5px solid var(--color-border-tertiary);white-space:nowrap}
+.tag{font-size:10px;padding:1px 6px;border-radius:3px;font-weight:500}
+.tp{background:#EAF3DE;color:#3B6D11}.tn{background:#FCEBEB;color:#A32D2D}.tz{background:var(--color-background-tertiary);color:var(--color-text-secondary)}
+.seg-bar{display:flex;gap:2px;height:28px;border-radius:6px;overflow:hidden;margin-bottom:6px}
+.seg{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#fff;transition:.3s}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>BĐS Dân cư — KQKD Q1/2026</h1>
+<div class="sub">42 công ty niêm yết · Cập nhật đến 30/04/2026</div>
+
+<div class="kpi">
+  <div class="kcard">
+    <div class="kl">Tổng DT (có VHM)</div>
+    <div class="kv neu">76.811 tỷ</div>
+    <div class="ks">VHM chiếm 84,8%</div>
+  </div>
+  <div class="kcard">
+    <div class="kl">DT excl. VHM</div>
+    <div class="kv neu">11.697 tỷ</div>
+    <div class="ks">Trung vị YoY: <span class="pos">+3%</span></div>
+  </div>
+  <div class="kcard">
+    <div class="kl">Tổng LN (có VHM)</div>
+    <div class="kv pos">28.040 tỷ</div>
+    <div class="ks">VHM: 25.552 tỷ (+850%)</div>
+  </div>
+  <div class="kcard">
+    <div class="kl">LN excl. VHM</div>
+    <div class="kv neu">2.488 tỷ</div>
+    <div class="ks">Trung vị YoY: <span class="neg">−21,6%</span></div>
+  </div>
+  <div class="kcard">
+    <div class="kl">Lỗ ròng</div>
+    <div class="kv neg">6 công ty</div>
+    <div class="ks">DIG, LDG, DRH, PTL, LSG, IDJ</div>
+  </div>
+</div>
+
+<div class="grid3">
+  <div class="panel">
+    <div class="pt">DT tăng / giảm (40 cty có dữ liệu)</div>
+    <div class="seg-bar">
+      <div class="seg" style="width:55%;background:#1D9E75">+22 tăng</div>
+      <div class="seg" style="width:45%;background:#E24B4A">−18 giảm</div>
+    </div>
+    <div class="seg-bar">
+      <div class="seg" style="width:50%;background:#1D9E75">+18 LN tăng</div>
+      <div class="seg" style="width:50%;background:#E24B4A">−18 LN giảm</div>
+    </div>
+    <div style="font-size:10px;color:var(--color-text-secondary);margin-top:6px">Cán cân lợi nhuận 50/50 — phân hóa đặc trưng BĐS</div>
+  </div>
+  <div class="panel">
+    <div class="pt">Phân nhóm theo quy mô</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:11px">Lớn (12 cty)</span><span class="pos" style="font-size:11px">LN med +161,2%</span></div>
+        <div style="background:#1D9E75;height:6px;border-radius:3px;width:100%"></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:11px">Vừa (13 cty)</span><span class="neg" style="font-size:11px">LN med −24,1%</span></div>
+        <div style="background:#F0997B;height:6px;border-radius:3px;width:60%"></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:11px">Nhỏ (17 cty)</span><span class="neg" style="font-size:11px">LN med −76,3%</span></div>
+        <div style="background:#E24B4A;height:6px;border-radius:3px;width:20%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="pt">% KH DT Q1 (15 cty có số liệu)</div>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-top:2px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">DXG</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:27%;height:100%;background:#3266ad;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">27%</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">ITC</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:26%;height:100%;background:#3266ad;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">26%</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">THD</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:25%;height:100%;background:#3266ad;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">25%</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">CCL</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:23%;height:100%;background:#3266ad;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">23%</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">TDH</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:19%;height:100%;background:#3266ad;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">19%</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px">Còn lại</span><div style="flex:1;margin:0 8px;background:var(--color-border-tertiary);height:5px;border-radius:3px"><div style="width:6%;height:100%;background:#F0997B;border-radius:3px"></div></div><span style="font-size:10px;color:var(--color-text-secondary)">&lt;7%</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="grid2">
+  <div class="panel">
+    <div class="pt">Top 10 lợi nhuận Q1/2026 (tỷ VND)</div>
+    <div class="chart-wrap" style="height:240px"><canvas id="c_top"></canvas></div>
+  </div>
+  <div class="panel">
+    <div class="pt">Tăng trưởng LN YoY — loại trừ outlier cực đoan</div>
+    <div class="chart-wrap" style="height:240px"><canvas id="c_yoy"></canvas></div>
+  </div>
+</div>
+
+<div class="grid2" style="margin-bottom:12px">
+  <div class="panel">
+    <div class="pt">Biên lợi nhuận ròng — 20 cty DT > 40 tỷ</div>
+    <div class="chart-wrap" style="height:260px"><canvas id="c_bien"></canvas></div>
+  </div>
+  <div class="panel">
+    <div class="pt">DT vs LN scatter (excl. VHM)</div>
+    <div class="chart-wrap" style="height:260px"><canvas id="c_scatter"></canvas></div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="pt">Bảng chi tiết 42 công ty</div>
+  <div style="overflow-x:auto;max-height:360px;overflow-y:auto">
+  <table id="tbl">
+    <thead><tr>
+      <th>Mã</th><th>Sàn</th><th>Vốn hóa</th><th>DT (tỷ)</th><th>DT YoY</th><th>LN (tỷ)</th><th>LN YoY</th><th>Biên LN</th><th>%KH</th><th>PE</th>
+    </tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  </div>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const isDark = matchMedia('(prefers-color-scheme:dark)').matches;
+const tc = isDark?'#aaa':'#666';
+const gc = isDark?'rgba(255,255,255,0.07)':'rgba(0,0,0,0.06)';
+
+const companies = [
+  {m:'VHM',s:'HOSE',vh:599682,dt:65114,dtY:314.8,lr:25551.9,lrY:850.26,bien:39.2,kh:null,pe:9.26},
+  {m:'NVL',s:'HOSE',vh:45807,dt:3586.7,dtY:101.7,lr:901.2,lrY:null,bien:25.1,kh:null,pe:14.83},
+  {m:'KSF',s:'HNX',vh:82780,dt:766.8,dtY:85.36,lr:284.9,lrY:796.99,bien:37.2,kh:null,pe:9.45},
+  {m:'KDH',s:'HOSE',vh:28504,dt:281.4,dtY:-60.37,lr:281.4,lrY:130.75,bien:100,kh:null,pe:23.66},
+  {m:'SSH',s:'UPCOM',vh:25463,dt:562.7,dtY:201.02,lr:276.1,lrY:3677.72,bien:49.1,kh:null,pe:-195.13},
+  {m:'SJS',s:'HOSE',vh:17551,dt:316.8,dtY:121,lr:175.6,lrY:161.2,bien:55.4,kh:null,pe:37.37},
+  {m:'TAL',s:'HOSE',vh:16236,dt:692.8,dtY:84.32,lr:152.1,lrY:651.49,bien:22,kh:6.26,pe:20.96},
+  {m:'PDR',s:'HOSE',vh:16414,dt:104.3,dtY:-76.18,lr:132.4,lrY:161.57,bien:126.9,kh:1.18,pe:27.5},
+  {m:'NLG',s:'HOSE',vh:13413,dt:1279.4,dtY:-1,lr:68.2,lrY:-37.04,bien:5.3,kh:null,pe:20.28},
+  {m:'THD',s:'HNX',vh:12012,dt:238.5,dtY:9,lr:30.1,lrY:14.48,bien:12.6,kh:25,pe:115.05},
+  {m:'DIG',s:'HOSE',vh:11707,dt:144.6,dtY:-5.41,lr:-6.6,lrY:null,bien:-4.6,kh:4.82,pe:17.34},
+  {m:'DXG',s:'HOSE',vh:17075,dt:1352.6,dtY:46.23,lr:37.9,lrY:-21.57,bien:2.8,kh:27.05,pe:77.45},
+  {m:'KOS',s:'HOSE',vh:8248,dt:257,dtY:13.36,lr:2.7,lrY:1.79,bien:1.1,kh:null,pe:434.26},
+  {m:'VPI',s:'HOSE',vh:19651,dt:287.4,dtY:15.53,lr:26.9,lrY:-80.9,bien:9.4,kh:6.39,pe:71.01},
+  {m:'HDC',s:'HOSE',vh:3735,dt:248.7,dtY:151,lr:57.4,lrY:322.26,bien:23.1,kh:null,pe:5.47},
+  {m:'QCG',s:'HOSE',vh:3797,dt:69.3,dtY:-37.85,lr:13.5,lrY:42.65,bien:19.5,kh:null,pe:21.65},
+  {m:'VC3',s:'HNX',vh:3668,dt:106.3,dtY:-0.55,lr:19.3,lrY:195.81,bien:18.2,kh:null,pe:32.59},
+  {m:'LSG',s:'UPCOM',vh:3195,dt:2.1,dtY:null,lr:-11.3,lrY:null,bien:null,kh:null,pe:128.32},
+  {m:'SCR',s:'HOSE',vh:2605,dt:150.4,dtY:36.82,lr:13,lrY:760.76,bien:8.6,kh:11.79,pe:29.67},
+  {m:'AGG',s:'HOSE',vh:2048,dt:67.3,dtY:-65,lr:5,lrY:-51.16,bien:7.4,kh:null,pe:5.48},
+  {m:'NTL',s:'HOSE',vh:1946,dt:4.5,dtY:28,lr:14.6,lrY:129.15,bien:324.4,kh:6,pe:75.9},
+  {m:'NBB',s:'HOSE',vh:1783,dt:3.8,dtY:-71.93,lr:0.2,lrY:85.29,bien:5.3,kh:null,pe:188.92},
+  {m:'HPX',s:'HOSE',vh:1466,dt:120.4,dtY:22,lr:8.9,lrY:-38.49,bien:7.4,kh:6,pe:12.66},
+  {m:'TDC',s:'HOSE',vh:1400,dt:231.1,dtY:83.1,lr:8.2,lrY:-57.26,bien:3.5,kh:null,pe:5.29},
+  {m:'TIG',s:'HNX',vh:1278,dt:155.5,dtY:-59.33,lr:6.9,lrY:-81.92,bien:4.4,kh:null,pe:29.69},
+  {m:'CKG',s:'HOSE',vh:1393,dt:82.8,dtY:-40.27,lr:7,lrY:-70.61,bien:8.5,kh:6.37,pe:18.87},
+  {m:'ITC',s:'HOSE',vh:1180,dt:213,dtY:32.7,lr:8.5,lrY:-24.08,bien:4,kh:26.33,pe:24.96},
+  {m:'LDG',s:'HOSE',vh:874,dt:-9.8,dtY:-112.74,lr:-16.3,lrY:-232.38,bien:null,kh:null,pe:13.62},
+  {m:'L14',s:'HNX',vh:762,dt:28.2,dtY:-11,lr:1.5,lrY:-82.22,bien:5.3,kh:null,pe:50.32},
+  {m:'NDN',s:'HNX',vh:752,dt:16.9,dtY:241,lr:0.6,lrY:-98.73,bien:3.6,kh:null,pe:5.98},
+  {m:'TDH',s:'HOSE',vh:508,dt:47.4,dtY:492.76,lr:6.7,lrY:18.45,bien:14.1,kh:18.98,pe:4.64},
+  {m:'D2D',s:'HOSE',vh:1046,dt:44.1,dtY:-52,lr:5.3,lrY:-36.28,bien:12,kh:7,pe:4.41},
+  {m:'VRC',s:'HOSE',vh:630,dt:1,dtY:112.85,lr:0.1,lrY:-99.49,bien:10,kh:null,pe:-65.62},
+  {m:'SLD',s:'UPCOM',vh:629,dt:0,dtY:null,lr:0.2,lrY:null,bien:null,kh:null,pe:108.1},
+  {m:'IDJ',s:'HNX',vh:659,dt:12.3,dtY:-88.31,lr:-4.4,lrY:-135.64,bien:-35.8,kh:null,pe:-5.44},
+  {m:'DRH',s:'HOSE',vh:296,dt:0.9,dtY:-5.75,lr:-24.9,lrY:null,bien:null,kh:null,pe:17.98},
+  {m:'CCL',s:'HOSE',vh:296,dt:69.3,dtY:3,lr:8.2,lrY:-41.01,bien:11.8,kh:23,pe:13.02},
+  {m:'PTL',s:'HOSE',vh:282,dt:122.5,dtY:18.26,lr:-8,lrY:-680.75,bien:-6.5,kh:3.99,pe:106.98},
+  {m:'RCL',s:'HNX',vh:163,dt:2.5,dtY:-2,lr:0.1,lrY:72.85,bien:4,kh:null,pe:20.3},
+  {m:'D11',s:'HNX',vh:95,dt:20.5,dtY:-13,lr:1.3,lrY:-51.91,bien:6.3,kh:null,pe:13.1},
+  {m:'DTA',s:'HOSE',vh:70,dt:12.4,dtY:-59,lr:2.5,lrY:2755.2,bien:20.2,kh:null,pe:26.61},
+  {m:'PVL',s:'UPCOM',vh:145,dt:2.6,dtY:null,lr:1.3,lrY:null,bien:50,kh:null,pe:379.19},
+];
+
+// Table
+const tbody = document.getElementById('tbody');
+const sorted = [...companies].sort((a,b)=>b.vh-a.vh);
+sorted.forEach(c=>{
+  const lrYstr = c.lrY===null?'—':(c.lrY>0?'+':'')+c.lrY.toFixed(1)+'%';
+  const dtYstr = c.dtY===null?'—':(c.dtY>0?'+':'')+c.dtY.toFixed(1)+'%';
+  const lrClass = c.lrY===null?'tz':c.lrY>0?'tp':'tn';
+  const dtClass = c.dtY===null?'tz':c.dtY>0?'tp':'tn';
+  const lrNeg = c.lr<0;
+  const row = `<tr>
+    <td><strong>${c.m}</strong></td>
+    <td>${c.s}</td>
+    <td>${(c.vh/1000).toFixed(1)}K</td>
+    <td>${c.dt<=0?'—':c.dt.toLocaleString()}</td>
+    <td><span class="tag ${dtClass}">${dtYstr}</span></td>
+    <td style="color:${lrNeg?'#E24B4A':'inherit'}">${c.lr.toLocaleString()}</td>
+    <td><span class="tag ${lrClass}">${lrYstr}</span></td>
+    <td>${c.bien===null?'—':c.bien.toFixed(1)+'%'}</td>
+    <td>${c.kh===null?'—':c.kh.toFixed(1)+'%'}</td>
+    <td>${c.pe<0||c.pe>300?'N/M':c.pe.toFixed(1)}</td>
+  </tr>`;
+  tbody.insertAdjacentHTML('beforeend',row);
+});
+
+// Chart 1: top 10 LN
+const top10 = [...companies].sort((a,b)=>b.lr-a.lr).slice(0,10);
+new Chart(document.getElementById('c_top'),{
+  type:'bar',
+  data:{labels:top10.map(c=>c.m),datasets:[{
+    data:top10.map(c=>c.lr),
+    backgroundColor:top10.map(c=>c.m==='VHM'?'#3266ad':c.m==='NVL'?'#6B8FB5':c.m==='KSF'?'#5577AA':'#90B4D8'),
+    borderRadius:3
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toLocaleString()+' tỷ'}}},
+    scales:{
+      x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},
+      y:{ticks:{color:tc,font:{size:9},callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v},grid:{color:gc}}
+    }
+  }
+});
+
+// Chart 2: YoY LN — exclude extreme outliers, show meaningful ones
+const yoyData = companies.filter(c=>c.lrY!==null&&Math.abs(c.lrY)<800&&c.m!=='VHM').sort((a,b)=>b.lrY-a.lrY);
+new Chart(document.getElementById('c_yoy'),{
+  type:'bar',
+  data:{labels:yoyData.map(c=>c.m),datasets:[{
+    data:yoyData.map(c=>c.lrY),
+    backgroundColor:yoyData.map(c=>c.lrY>0?'#1D9E75':'#E24B4A'),
+    borderRadius:2
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>(ctx.raw>0?'+':'')+ctx.raw.toFixed(1)+'%'}}},
+    scales:{
+      x:{ticks:{color:tc,font:{size:8},maxRotation:45},grid:{display:false}},
+      y:{ticks:{color:tc,font:{size:9},callback:v=>v+'%'},grid:{color:gc}}
+    }
+  }
+});
+
+// Chart 3: bien LN top 20
+const bienData = companies.filter(c=>c.dt>40&&c.bien!==null&&Math.abs(c.bien)<150).sort((a,b)=>b.bien-a.bien).slice(0,20);
+new Chart(document.getElementById('c_bien'),{
+  type:'bar',
+  data:{labels:bienData.map(c=>c.m),datasets:[{
+    data:bienData.map(c=>c.bien),
+    backgroundColor:bienData.map(c=>c.bien>20?'#1D9E75':c.bien>10?'#90D4B8':c.bien>0?'#F0997B':'#E24B4A'),
+    borderRadius:2
+  }]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
+    scales:{
+      x:{ticks:{color:tc,font:{size:9},callback:v=>v+'%'},grid:{color:gc}},
+      y:{ticks:{color:tc,font:{size:9}},grid:{display:false}}
+    }
+  }
+});
+
+// Chart 4: scatter DT vs LN excl VHM
+const scData = companies.filter(c=>c.m!=='VHM'&&c.dt>0&&c.lr!==null);
+new Chart(document.getElementById('c_scatter'),{
+  type:'scatter',
+  data:{datasets:[{
+    data:scData.map(c=>({x:c.dt,y:c.lr,label:c.m})),
+    backgroundColor:scData.map(c=>c.lr>0?'rgba(29,158,117,0.7)':'rgba(226,75,74,0.7)'),
+    pointRadius:5,
+    pointHoverRadius:7
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{
+      label:ctx=>`${ctx.raw.label}: DT=${ctx.raw.x.toFixed(0)}tỷ | LN=${ctx.raw.y.toFixed(1)}tỷ`
+    }}},
+    scales:{
+      x:{ticks:{color:tc,font:{size:9},callback:v=>v+'tỷ'},grid:{color:gc},title:{display:true,text:'Doanh thu (tỷ)',color:tc,font:{size:9}}},
+      y:{ticks:{color:tc,font:{size:9},callback:v=>v+'tỷ'},grid:{color:gc},title:{display:true,text:'Lợi nhuận (tỷ)',color:tc,font:{size:9}}}
+    }
+  }
+});
+</script>
+</body>
+</html>
